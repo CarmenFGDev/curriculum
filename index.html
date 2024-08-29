@@ -219,6 +219,12 @@
         text-decoration: none;
         text-transform: capitalize;
       }
+      .aside__section__item > a.mail{
+        color: var(--black_color);
+        font-size: 14px;
+        text-decoration: none;
+        text-transform: none;
+      }
       .aside__section__item > a:hover {
         color: var(--primary_color);
       }
@@ -341,6 +347,14 @@
         .section__content__header > h3 {
           font-size: 24px;
         }
+        .section__content__header > h3 > a.info{
+            color: var(--black_color);
+            font-size: 14px;
+            text-decoration: none;
+        }
+        .section__content__header > h3 > a.info:hover {
+        color: var(--primary_color);
+      }
         .section__content__header > h4 {
           font-size: 16px;
         }
@@ -374,6 +388,9 @@
         border: 0px;
         border-left: 2px solid var(--primary_color);
       }
+      .aside__section__item> .item__lowercase {
+        text-transform: lowercase;
+      }
     </style>
   </head>
   <body>
@@ -386,9 +403,9 @@
         
     <h1>Carmen <br /><span> Fernández García</span></h1>
     <hr />
-    <p class="job-title">Senior Software Developer</p>
+    <p class="job-title">Senior Frontend Developer</p>
     <p>Apasionada por el trabajo en equipo y el crecimiento profesional continuo. Creo firmemente en la importancia de la formación continua para afrontar nuevos retos con éxito. Me encantan los nuevos desafíos que me permitan seguir desarrollándome tanto a nivel personal como profesional.<br />
-Gran implicación en cada proyecto y siempre dispuesta a facilitar el trabajo a los compañeros.</p>
+Gran implicación en cada proyecto y proactiva. Me encantan los nuevos retos,</p>
 
 
 
@@ -397,27 +414,20 @@ Gran implicación en cada proyecto y siempre dispuesta a facilitar el trabajo a 
 
       <aside>
 
-          <div class="aside__section">
-    <div class="aside__section__header">
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        width="34"
-        height="33"
-        viewBox="0 0 35 33"
-        fill="none"
-        class="svg-fill"
-      >
-        <path
-          d="M16.8561 2.5C9.26216 2.5 3.10608 8.65609 3.10608 16.25C3.10608 23.8439 9.26216 30 16.8561 30C24.45 30 30.6061 23.8439 30.6061 16.25C30.6061 8.65609 24.45 2.5 16.8561 2.5ZM0.606079 16.25C0.606079 7.27537 7.88145 0 16.8561 0C25.8307 0 33.1061 7.27537 33.1061 16.25C33.1061 25.2246 25.8307 32.5 16.8561 32.5C7.88145 32.5 0.606079 25.2246 0.606079 16.25ZM15.6061 8.75C15.6061 8.05964 16.1657 7.5 16.8561 7.5H16.8706C17.561 7.5 18.1206 8.05964 18.1206 8.75C18.1206 9.44036 17.561 10 16.8706 10H16.8561C16.1657 10 15.6061 9.44036 15.6061 8.75ZM12.6061 14.75C12.6061 14.0596 13.1657 13.5 13.8561 13.5H16.8561C17.5464 13.5 18.1061 14.0596 18.1061 14.75V21H19.8561C20.5464 21 21.1061 21.5596 21.1061 22.25C21.1061 22.9404 20.5464 23.5 19.8561 23.5H13.8561C13.1657 23.5 12.6061 22.9404 12.6061 22.25C12.6061 21.5596 13.1657 21 13.8561 21H15.6061V16H13.8561C13.1657 16 12.6061 15.4404 12.6061 14.75Z"
-        />
-      </svg>
-      <div>
-        <h3>
-          Mis enlaces
-        </h3>
-        <hr class="secondary-divider" />
-      </div>
-    </div>
+      <div class="aside__section">
+        <div class="aside__section__header">
+          <svg xmlns="http://www.w3.org/2000/svg" width="21" height="33" viewBox="0 0 21 33" fill="none" class="svg-stroke">
+            <path
+              d="M19.6061 22.939C18.4811 24.2172 17.0964 25.2407 15.5444 25.9412C13.9924 26.6417 12.3088 27.003 10.6061 27.001M10.6061 27.001C8.90332 27.003 7.21973 26.6417 5.66772 25.9412C4.11571 25.2407 2.73101 24.2172 1.60608 22.939M10.6061 27.001V31.501M7.60608 31.501H13.6061M10.6061 1.50098C13.9198 1.50098 16.6061 4.18727 16.6061 7.50098V15.001C16.6061 18.3147 13.9198 21.001 10.6061 21.001C7.29237 21.001 4.60608 18.3147 4.60608 15.001V7.50098C4.60608 4.18727 7.29237 1.50098 10.6061 1.50098Z"
+              stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+          <div>
+            <h3>
+              Mis enlaces
+            </h3>
+            <hr class="secondary-divider" />
+          </div>
+        </div>
         <div class="aside__section__item">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -470,42 +480,10 @@ Gran implicación en cada proyecto y siempre dispuesta a facilitar el trabajo a 
             />
           </svg>
           <a href="https://github.com/CarmenFGDev" target="_blank">github</a>
+               
         </div>
-
-
-
-
-
   </div>
-
-          <div class="aside__section">
-    <div class="aside__section__header">
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        width="21"
-        height="33"
-        viewBox="0 0 21 33"
-        fill="none"
-        class="svg-stroke"
-      >
-        <path
-          d="M19.6061 22.939C18.4811 24.2172 17.0964 25.2407 15.5444 25.9412C13.9924 26.6417 12.3088 27.003 10.6061 27.001M10.6061 27.001C8.90332 27.003 7.21973 26.6417 5.66772 25.9412C4.11571 25.2407 2.73101 24.2172 1.60608 22.939M10.6061 27.001V31.501M7.60608 31.501H13.6061M10.6061 1.50098C13.9198 1.50098 16.6061 4.18727 16.6061 7.50098V15.001C16.6061 18.3147 13.9198 21.001 10.6061 21.001C7.29237 21.001 4.60608 18.3147 4.60608 15.001V7.50098C4.60608 4.18727 7.29237 1.50098 10.6061 1.50098Z"
-          stroke-width="2.5"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-        />
-      </svg>
-      <div>
-        <h3>
-          Idiomas
-        </h3>
-        <hr class="secondary-divider" />
-      </div>
-    </div>
-    <ul class="aside__section__list-items">
-        <li>Inglés Intermedio</li>
-    </ul>
-  </div>
+ 
 
 
             <div class="aside__section">
@@ -534,13 +512,16 @@ Gran implicación en cada proyecto y siempre dispuesta a facilitar el trabajo a 
       </div>
       <ul class="aside__section__list-items">
           <li>HTML</li>
-          <li>Angular</li>
-          <li>TypeScript</li>
-          <li>React</li>
-          <li>Vue</li>
           <li>CSS</li>
           <li>Sass</li>
+          <li>Javascript</li>
+          <li>TypeScript</li>
+          <li>Angular</li>
           <li>Angular Material</li>
+          <li>Redux</li>
+          <li>RxJS</li>
+          <li>React</li>
+          <li>Vue</li>
           <li>Github</li>
           <li>Jenkins</li>
           <li>Jira</li>
@@ -549,7 +530,6 @@ Gran implicación en cada proyecto y siempre dispuesta a facilitar el trabajo a 
           <li>Api's Rest</li>
           <li>Render </li>
           <li>GitHub Actions</li>
-          <li>Visual Studio Code</li>
           <li>Docker</li>
           <li>.NET</li>
           <li>Java</li>
@@ -587,6 +567,44 @@ Gran implicación en cada proyecto y siempre dispuesta a facilitar el trabajo a 
           <li>Proactividad</li>
           <li>Compromiso con el proyecto</li>
           <li>Trabajo en equipo</li>
+          <li>Capacidad analítica</li>
+      </ul>
+    </div>
+    <div class="aside__section__header">
+      <svg xmlns="http://www.w3.org/2000/svg" width="21" height="33" viewBox="0 0 21 33" fill="none" class="svg-stroke">
+        <path
+          d="M19.6061 22.939C18.4811 24.2172 17.0964 25.2407 15.5444 25.9412C13.9924 26.6417 12.3088 27.003 10.6061 27.001M10.6061 27.001C8.90332 27.003 7.21973 26.6417 5.66772 25.9412C4.11571 25.2407 2.73101 24.2172 1.60608 22.939M10.6061 27.001V31.501M7.60608 31.501H13.6061M10.6061 1.50098C13.9198 1.50098 16.6061 4.18727 16.6061 7.50098V15.001C16.6061 18.3147 13.9198 21.001 10.6061 21.001C7.29237 21.001 4.60608 18.3147 4.60608 15.001V7.50098C4.60608 4.18727 7.29237 1.50098 10.6061 1.50098Z"
+          stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+      </svg>
+      <div>
+        <h3>
+          Contacto
+        </h3>
+        <hr class="secondary-divider" />
+      </div>
+    </div>
+    <div class="aside__section__item">
+      <a class="mail" href="mailto:carmenfgdev@gmail.com">carmenfgdev@gmail.com</a>
+    </div>
+    
+    
+    <div class="aside__section">
+      <div class="aside__section__header">
+        <svg xmlns="http://www.w3.org/2000/svg" width="21" height="33" viewBox="0 0 21 33" fill="none" class="svg-stroke">
+          <path
+            d="M19.6061 22.939C18.4811 24.2172 17.0964 25.2407 15.5444 25.9412C13.9924 26.6417 12.3088 27.003 10.6061 27.001M10.6061 27.001C8.90332 27.003 7.21973 26.6417 5.66772 25.9412C4.11571 25.2407 2.73101 24.2172 1.60608 22.939M10.6061 27.001V31.501M7.60608 31.501H13.6061M10.6061 1.50098C13.9198 1.50098 16.6061 4.18727 16.6061 7.50098V15.001C16.6061 18.3147 13.9198 21.001 10.6061 21.001C7.29237 21.001 4.60608 18.3147 4.60608 15.001V7.50098C4.60608 4.18727 7.29237 1.50098 10.6061 1.50098Z"
+            stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+        <div>
+          <h3>
+            Idiomas
+          </h3>
+          <hr class="secondary-divider" />
+        </div>
+      </div>
+      <ul class="aside__section__list-items">
+        <li>Inglés Intermedio</li>
+        <li>Español</li>
       </ul>
     </div>
   
@@ -623,26 +641,27 @@ Gran implicación en cada proyecto y siempre dispuesta a facilitar el trabajo a 
           </div>
           <div class="data">
             <p><b>Senior Software Developer</b></p>
-                  <p><strong>Banco Santander (CIB)</strong><br />
-<em>(Julio 2023 -Actualmente)</em><br />
-Tecnología Angular.<br />
-Estimación y alcance de las tareas.<br />
-Nuevos desarrollos y resolución de incidencias.<br />
-Colaboración y coordinación con el equipo de back.<br />
-Revisión de código y soporte a compañeros</p>
-<p><strong>Proyectos internos ntt data</strong><br />
-<em>(Enero 2023 -Julio 2023)</em><br />
-Tecnología Angular.<br />
-Maquetación.<br />
-Análisis y estimación de proyectos internos de la empresa.</p>
-<p><strong>Viajes el Corte Inglés</strong><br />
-<em>(Junio 2021- Enero 2023)</em><br />
-Tecnología Angular.<br />
-Colaborando en nuevos desarrollos y resolución de incidencias.<br />
-Colaboración en la coordinación de varios equipos.<br />
-IDE: Visual Studio Code.<br />
-Trabajo con herramientas y tecnología como Git, Jira, Kanban , Jenkins, Bitbucket , Fork ...<br />
-Metodología Agile.</p>
+                  <p><strong>Proyecto sector banca</strong><br />
+                  <em>(Julio 2023 -Actualmente)</em><br />
+                  Tecnología Angular.<br />
+                  Estimación y alcance de las tareas.<br />
+                  Nuevos desarrollos y resolución de incidencias.<br />
+                  Colaboración y coordinación con el equipo de back.<br />
+                  Revisión de código y soporte a compañeros</p>
+                  <p><strong>Proyectos internos ntt data</strong><br />
+                  <em>(Enero 2023 -Julio 2023)</em><br />
+                  Tecnología Angular.<br />
+                  Maquetación.<br />
+                  Análisis y estimación de proyectos internos de la empresa.</p>
+                  <p><strong>Proyecto sector viajes</strong><br />
+                  <em>(Junio 2021- Enero 2023)</em><br />
+                  Tecnología Angular.<br />
+                  Colaborando en nuevos desarrollos y resolución de incidencias.<br />
+                  Colaboración en la coordinación de varios equipos.<br />
+                  IDE: Visual Studio Code.<br />
+                  Trabajo con herramientas y tecnología como Git, Jira, Kanban , Jenkins, Bitbucket , Fork ...<br />
+                  Metodología Agile.
+                </p>
 
           </div>
         </div>
@@ -769,14 +788,17 @@ Freelance <em>(Enero-Junio 2021)</em></p>
         </div>
         <div class="section__content">
           <div class="section__content__header">
-            <h3>Frontend Máster online</h3>
+            <h3>Frontend Máster online  <a class="info" href="https://lemoncode.net/lemoncode-blog/2022/2/15/master-front-end-lemoncode-que-puedo-aprender" target="_blank">+info</a></h3>
           </div>
           <div class="date date-mobile">
             mar 2023
                - mar 2024</b></p>
           </div>
           <div class="data">
+            <b>User Experience - Layout - Lenguaje - Bundling - Frameworks - Interacción con Servidor - Testing - Despliegue en la
+            nube.</b>
             <p><b>Lemoncoders</b></p>
+           
           </div>
         </div>
       </div>
@@ -879,9 +901,7 @@ Freelance <em>(Enero-Junio 2021)</em></p>
       <div class="main__section__item">
         <div class="date date-desktop">
           <p>Inicio: <b>ene 1996</b></p>
-          <p>Fin: <b>
-            ene 2001
-          </b></p>
+          <p>Fin: <b> - </b></p>
         </div>
         <div class="line-icon">
           <div class="circle"></div>
